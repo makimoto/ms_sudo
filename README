@@ -1,0 +1,25 @@
+ms_sudo - sudo(8) command wrapper for more spiritual engineering
+
+ABOUT
+
+  ms_sudo is a wrapper command for sudo(8).
+  When 仏滅 (Butsumetsu), the worst day in 六曜 (Rokuyou),
+  this command warns and lets the user tell ありがとう to Server.
+  (you must type "Server" with the capital letter.)
+
+INSTLATION
+
+1. get qreki.pl (written by H.Takano and N.Ueno) and put to perl library path.
+
+  % wget http://www3.biwako.ne.jp/~nobuaki/qreki/qreki.pl
+  % sudo mv qreki.pl /path/to/perl_libs
+
+2. rename original sudo to sudo.orig
+
+  % cd /usr/bin
+  % sudo mv sudo sudo.orig
+
+3. put ms_sudo to /usr/bin/sudo
+
+  % mv ~/ms_sudo/sudo to /usr/bin/sudo
+

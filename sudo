@@ -1,0 +1,20 @@
+#!/bin/sh
+# ms_sudo - more spiritural sudo
+
+DATE=`date "+%Y,%m,%d"`
+ROKUYO=`perl -e "require 'qreki.pl';print &qreki::get_rokuyou($DATE)"`
+if [ $ROKUYO -eq 5 ];then
+  echo "Warning: It's Butsumetsu!"
+  while [ 1 ]; do
+    echo "Warning: Type 'ありがとう' to the Server by your own hands."
+    read STR
+    if [ $STR = "ありがとう" ];then
+      echo $STR > /dev/null
+      break
+    else
+      echo "Bad Input! Try again."
+    fi
+  done
+fi
+
+/usr/bin/sudo.orig $@
