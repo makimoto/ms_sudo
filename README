@@ -23,3 +23,6 @@ INSTLATION
 
   % mv ~/ms_sudo/sudo to /usr/bin/sudo
 
+LICENSE
+  This software is distributed under the terms of the new BSD License.
+
