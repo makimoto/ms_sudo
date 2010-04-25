@@ -8,7 +8,7 @@ if [ $ROKUYO -eq 5 ];then
   while [ 1 ]; do
     echo "Warning: Type 'ありがとう' to the Server by your own hands."
     read STR
-    if [ $STR = "ありがとう" ];then
+    if [ "$STR " = "ありがとう " ];then
       echo $STR > /dev/null
       break
     else
